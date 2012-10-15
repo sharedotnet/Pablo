@@ -56,6 +56,14 @@
     <Content Include="Account\ChangePasswordSuccess.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\NORTHWND.LDF">
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
+    <Content Include="App_Data\NORTHWND.MDF" />
+    <Content Include="App_Data\NORTHWND_log.ldf">
+      <DependentUpon>NORTHWND.MDF</DependentUpon>
+    </Content>
+    <Content Include="Database.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -106,6 +114,13 @@
     <Compile Include="Account\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Database.aspx.cs">
+      <DependentUpon>Database.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Database.aspx.designer.cs">
+      <DependentUpon>Database.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -125,9 +140,7 @@
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Account\Web.config" />
     <Content Include="Site.Master" />
